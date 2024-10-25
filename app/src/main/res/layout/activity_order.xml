@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Order Food"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@color/blue"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/lobster"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="20dp"/>
+        <TextView
+            android:id="@+id/etFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter food name - Get From List"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/lobster"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Servings"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        <EditText
+            android:id="@+id/etServings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of servings"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordering Name"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ordering name by"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Notes"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter any additional notes"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            android:padding="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+</LinearLayout>

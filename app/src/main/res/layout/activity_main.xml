@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:src="@drawable/logres"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- Resto Maret -->
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/store_name"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/lobster"
+    />
+
+    <!--Login-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Sign to Continue"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        android:drawableLeft="@drawable/ic_person"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/hint_password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"/>
+
+    <!-- Button Login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        />
+
+    <!-- Register Link -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

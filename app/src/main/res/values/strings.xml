@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UTSproject</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Sign In\n</string>
+    <string name="register">Don\'t have an acccount? Sign Up</string>
+    <string name="food_list_title">Food and Beverages</string>
+    <string name="store_name">Resto Maret</string>
+    <string name="hint_phone">Mobile Number</string>
+    <string name="signIn">Already have account?  Sign In</string>
+</resources>
